@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ccb418d.css",
+    "main.js": "/static/js/main.38aa4c7b.js",
+    "static/media/carrusel2.jpg": "/static/media/carrusel2.3c3c1c3a6eab5979987d.jpg",
+    "static/media/carrusel1.jpg": "/static/media/carrusel1.1dcd71081402d718be6e.jpg",
+    "static/media/carrusel3.jpg": "/static/media/carrusel3.99baf6834b340dbcf8b2.jpg",
+    "static/media/playaimage.jpg": "/static/media/playaimage.04ad9d3b869861862eaf.jpg",
+    "static/media/carrito-de-compra.jpg": "/static/media/carrito-de-compra.ef830b1dfc796c05f7cc.jpg",
+    "static/media/logo-econo.png": "/static/media/logo-econo.10e0fad761d04cf4b5cb.png",
+    "static/media/logoMono.png": "/static/media/logoMono.3e91eb565005f649a7e2.png",
+    "index.html": "/index.html",
+    "static/media/checkbox_icon.svg": "/static/media/checkbox_icon.7a39a80fd93e0b8d3623757653fe076b.svg",
+    "main.4ccb418d.css.map": "/static/css/main.4ccb418d.css.map",
+    "main.38aa4c7b.js.map": "/static/js/main.38aa4c7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ccb418d.css",
+    "static/js/main.38aa4c7b.js"
+  ]
+}
