@@ -8,21 +8,21 @@ const app = express();
 app.use(express.json())
 app.use(userRoute);
 
-describe('/user', ()=>
+describe('/user/all', ()=>
 test('should return status 200 & content-type "application/json"',async ()=>{
     const response = await request(app)
-    .get('/user')
+    .get('/user/all')
     expect(response.status).toBe(200);
     expect(response.headers['content-type']).toContain('application/json')
 }))
 
 
-describe("POST /user", () => {
+describe("POST /user/register", () => {
     describe("when passed a email,password, name, last_name, role", () => {
 
         test('should respond with a 200 & content-type "application/json', async () => {
             const response = await request(app)
-                .post('/user')
+                .post('/user/register')
                 .send({
                     email: "mi@mail.com",
                     password: "1234",
@@ -44,7 +44,7 @@ describe("POST /user", () => {
 
         test("should return a 400 status code to show there was a user error.", async () => {
             const response = await request(app)
-                .post('/user')
+                .post('/user/register')
                 .send({ password: "1234" });
 
             expect(response.status).toEqual(400);

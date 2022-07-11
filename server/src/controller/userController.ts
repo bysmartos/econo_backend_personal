@@ -24,6 +24,11 @@ const userController =  {
         const exp: any= await userModel.getUsers()
         res.json(exp)
 
+    },
+
+    login : async (req:Request,res:Response) =>{
+
+        res.send('usuario correcto');
     }
 }
 export default userController;
