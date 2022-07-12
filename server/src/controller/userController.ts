@@ -1,6 +1,9 @@
-import {Request,Response} from 'express';
+import {NextFunction,Request,Response} from 'express';
 import iUser from '../model/interfaces/iUser';
 import userModel from '../model/userModel';
+import jwt from '../middleware/jwtHandler';
+
+
 //import { QueryResult } from 'pg';
 
 const userController =  {
@@ -26,10 +29,22 @@ const userController =  {
 
     },
 
-    login : async (req:Request,res:Response) =>{
+    // login : async (req:Request,res:Response) =>{
 
-        res.send('usuario correcto');
-    }
+    //     res.send('usuario correcto');
+    // }
+    login: async (req: Request, res: Response) => {
+        const token:any = await jwt.generateToken(req.body.role)
+        console.log(token);
+
+        res.json({token});
+
+    },
+    // Auth: async (req: Request, res: Response) => {
+    //     res.json({
+    //         token: req.user
+    //     })
+    // }
 }
 export default userController;
 /*

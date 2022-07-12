@@ -2,6 +2,13 @@ import { Response,Request,NextFunction, request } from "express";
 import bcrypt from 'bcrypt';
 import userModel from "../model/userModel";
 
+
+ const hashingPassword = (password:string)  => {
+
+    const saltRounds = 10;
+    return bcrypt.hash(password, saltRounds);
+}
+
 const encryptPassword = async (req:Request,res:Response,next:NextFunction)=>{
 
     try {
@@ -49,4 +56,4 @@ const validateUser = async (req, res, next)=>{
 
 }
 
-export default {encryptPassword, validateUser};
+export default {encryptPassword, validateUser, hashingPassword};
