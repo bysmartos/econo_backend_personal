@@ -8,13 +8,13 @@ const app = express();
 app.use(express.json())
 app.use(userRoute);
 
-describe('/user/all', ()=>
-test('should return status 200 & content-type "application/json"',async ()=>{
-    const response = await request(app)
-    .get('/user/all')
-    expect(response.status).toBe(200);
-    expect(response.headers['content-type']).toContain('application/json')
-}))
+// describe('/user/all', ()=>
+// test('should return status 200 & content-type "application/json"',async ()=>{
+//     const response = await request(app)
+//     .get('/user/all')
+//     expect(response.status).toBe(200);
+//     expect(response.headers['content-type']).toContain('application/json')
+// }))
 
 
 describe("POST /user/register", () => {

@@ -27,17 +27,31 @@ const validateToken = (req: Request, res: Response, next: NextFunction) => {
     try {
 
         const token: string | null = getTokenFrom(req);
-        console.log(token);
-
         let email: any = tokenVerify(token);
+    //     let payload: JwtPayload;
+    //     console.log(token);
+    //     if (token) {
+    //         payload = tokenVerify(token) as JwtPayload;
+    //         next();
+    //     }
+    //      else {
+    //         next(HTTPError(401,{error: 'token invalid or missed'}))
+
+    //     }
+    // } catch (error:any) {
+    //     res.status(400).send(error.message)
+    // }
+
+        // let email: any = tokenVerify(token);
+        // console.log(email)
 
 
 
-        if (!token || email!== 'admin') {
-            throw new Error ('token invalid or missing');
+        if (!token || email!='admin') {
+            throw new Error ('token invalid or missing!');
         }
          else {
-            next(HTTPError(401,{error: 'token invalid or missed'}))
+            next()
 
         }
     } catch (error:any) {

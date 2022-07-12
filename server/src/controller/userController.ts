@@ -34,7 +34,7 @@ const userController =  {
     //     res.send('usuario correcto');
     // }
     login: async (req: Request, res: Response) => {
-        const token:any = await jwt.generateToken(req.body.role)
+        const token:any = await jwt.generateToken(req.body.email)
         console.log(token);
 
         res.json({token});
@@ -42,7 +42,7 @@ const userController =  {
     },
     // Auth: async (req: Request, res: Response) => {
     //     res.json({
-    //         token: req.user
+    //         token: req.body
     //     })
     // }
 }
