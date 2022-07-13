@@ -60,7 +60,45 @@ const validateToken = (req: Request, res: Response, next: NextFunction) => {
 
 }
 
+
+const validateTokenLogin = (req: Request, res: Response, next: NextFunction) => {
+    try {
+
+        const token: string | null = getTokenFrom(req);
+        let email: any = tokenVerify(token);
+    //     let payload: JwtPayload;
+    //     console.log(token);
+    //     if (token) {
+    //         payload = tokenVerify(token) as JwtPayload;
+    //         next();
+    //     }
+    //      else {
+    //         next(HTTPError(401,{error: 'token invalid or missed'}))
+
+    //     }
+    // } catch (error:any) {
+    //     res.status(400).send(error.message)
+    // }
+
+        // let email: any = tokenVerify(token);
+        // console.log(email)
+
+
+
+        if (!token || !email) {
+            throw new Error ('token invalid or missing!');
+        }
+         else {
+            next()
+
+        }
+    } catch (error:any) {
+        res.status(400).send(error.message)
+    }
+
+}
+
 export default {
     generateToken,
-    validateToken
+    validateToken, validateTokenLogin
 }

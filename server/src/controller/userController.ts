@@ -2,6 +2,7 @@ import {NextFunction,Request,Response} from 'express';
 import iUser from '../model/interfaces/iUser';
 import userModel from '../model/userModel';
 import jwt from '../middleware/jwtHandler';
+import iUserPut from '../model/iUserPut';
 
 
 //import { QueryResult } from 'pg';
@@ -13,19 +14,21 @@ const userController =  {
         const {email,password,name,last_name,role, ...users}:iUser = req.body;
         if(!email || !password || !name || !last_name || !role ){
             res.status(400).json({message:'some info is missing'});
+        } else {
+            const result = await userModel.saveUser({email,password,name,last_name,role, ...users});
+            result
+                    ? res.status(201).json({ result: result.rows})
+                    : res.status(500).send('No se pudo crear un nuevo usuario');  
         }
-        const result = await userModel.saveUser({email,password,name,last_name,role, ...users});
-        result
-                ? res.status(201).json({ result: result.rows})
-                : res.status(500).send('No se pudo crear un nuevo usuario');  
+       
     }catch (error: any){
         res.status(400).send(error.message);
     }
 },
     getUsers: async (req:Request,res:Response)=>{
             
-        const exp: any= await userModel.getUsers()
-        res.json(exp)
+        const users: any= await userModel.getUsers()
+        res.json(users)
 
     },
 
@@ -45,6 +48,24 @@ const userController =  {
     //         token: req.body
     //     })
     // }
+    
+    updateUser: async (req:Request,res:Response)=>{
+        try{
+            const param = req.params['id'];
+            const {email,password,name,last_name, ...users}:iUserPut = req.body;
+            if( !email || !password || !name || !last_name  ){
+                res.status(400).json({message:'some info is missing'});
+            } else {
+                const result = await userModel.updateUser({email,password,name,last_name, ...users}, param);
+                result
+                        ? res.status(201).json({ result: result.rows})
+                        : res.status(500).send('No se pudo modificar  un user');  
+            }
+           
+        }catch (error: any){
+            res.status(400).send(error.message);
+        }
+}
 }
 export default userController;
 /*

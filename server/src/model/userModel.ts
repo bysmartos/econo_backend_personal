@@ -3,6 +3,7 @@
 import iUser from "./interfaces/iUser";
 import connection from "../services/database.service";
 import { iUserLogin } from "./interfaces/iUserLogin";
+import iUserPut from "./iUserPut";
 
 class User {
     async saveUser(user:iUser){
@@ -27,6 +28,16 @@ class User {
         const values = [user.email]
         const client = await connection(queryStr,[user.email]);
         return client.rows[0];
+
+    }
+
+    async updateUser(us:iUserPut, id){
+   
+        const queryStr = 'UPDATE users SET email =$1, password=$2, name=$3, last_name=$4 where user_id=$5 returning *'
+       
+        const client:any= await connection(queryStr,[us.email,us.password,us.name,us.last_name,id] as string[]);
+        //const result = await client.query(queryStr, values);
+        return client.rows;
 
     }
 }
