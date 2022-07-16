@@ -44,6 +44,7 @@ const validateToken = (req: Request, res: Response, next: NextFunction) => {
 
         // let email: any = tokenVerify(token);
         // console.log(email)
+        
 
 
 
@@ -66,6 +67,7 @@ const validateTokenLogin = (req: Request, res: Response, next: NextFunction) => 
 
         const token: string | null = getTokenFrom(req);
         let email: any = tokenVerify(token);
+
     //     let payload: JwtPayload;
     //     console.log(token);
     //     if (token) {
