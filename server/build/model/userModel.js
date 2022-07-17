@@ -80,12 +80,26 @@ var User = /** @class */ (function () {
     };
     User.prototype.getUser = function (user) {
         return __awaiter(this, void 0, void 0, function () {
-            var queryStr, values, client;
+            var queryStr, client;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         queryStr = 'SELECT * FROM "users" WHERE email = $1';
-                        values = [user.email];
+                        return [4 /*yield*/, (0, database_service_1["default"])(queryStr, [user.email])];
+                    case 1:
+                        client = _a.sent();
+                        return [2 /*return*/, client.rows[0]];
+                }
+            });
+        });
+    };
+    User.prototype.getRole = function (user) {
+        return __awaiter(this, void 0, void 0, function () {
+            var queryStr, client;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        queryStr = 'SELECT role FROM "users" WHERE email = $1';
                         return [4 /*yield*/, (0, database_service_1["default"])(queryStr, [user.email])];
                     case 1:
                         client = _a.sent();

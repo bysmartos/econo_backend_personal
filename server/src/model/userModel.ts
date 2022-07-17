@@ -3,7 +3,7 @@
 import iUser from "./interfaces/iUser";
 import connection from "../services/database.service";
 import { iUserLogin } from "./interfaces/iUserLogin";
-import iUserPut from "./iUserPut";
+import iUserPut from "./interfaces/iUserPut";
 import { iUserRole } from "./interfaces/iUserRole";
 
 

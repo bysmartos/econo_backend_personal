@@ -73,9 +73,9 @@ const validateTokenRole = async (req: Request, res: Response, next: NextFunction
         const token: string | null = getTokenFrom(req);
         let email: any = tokenVerify(token);
         const result = await userModel.getRole({email});
-        console.log(email)
+        console.log(result.role)
 
-        if (!token || email!='san@mail.com') {
+        if (!token || result.role!='admin') {
             throw new Error ('token invalid or missing!');
         }
          else {

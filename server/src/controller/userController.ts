@@ -2,7 +2,7 @@ import {NextFunction,Request,Response} from 'express';
 import iUser from '../model/interfaces/iUser';
 import userModel from '../model/userModel';
 import jwt from '../middleware/jwtHandler';
-import iUserPut from '../model/iUserPut';
+import iUserPut from '../model/interfaces/iUserPut';
 
 
 //import { QueryResult } from 'pg';
