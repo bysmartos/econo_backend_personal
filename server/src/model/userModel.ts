@@ -4,6 +4,8 @@ import iUser from "./interfaces/iUser";
 import connection from "../services/database.service";
 import { iUserLogin } from "./interfaces/iUserLogin";
 import iUserPut from "./iUserPut";
+import { iUserRole } from "./interfaces/iUserRole";
+
 
 class User {
     async saveUser(user:iUser){
@@ -25,7 +27,13 @@ class User {
 
     async getUser(user:iUserLogin){
         const queryStr = 'SELECT * FROM "users" WHERE email = $1'
-        const values = [user.email]
+        const client = await connection(queryStr,[user.email]);
+        return client.rows[0];
+
+    }
+
+    async getRole(user:iUserRole){
+        const queryStr = 'SELECT role FROM "users" WHERE email = $1'
         const client = await connection(queryStr,[user.email]);
         return client.rows[0];
 
