@@ -1,7 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import {secret}  from '../services/config';
 import jwt, { JwtPayload } from 'jsonwebtoken';
-import HTTPError from 'http-errors';
 import userModel from "../model/userModel";
 
 
