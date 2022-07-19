@@ -84,24 +84,25 @@ var reservaController = {
         return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0:
-                    _b.trys.push([0, 2, , 3]);
+                    _b.trys.push([0, 4, , 5]);
                     param = req.params['userid'];
                     _a = req.body, experienciaId = _a.experienciaId, reservas = __rest(_a, ["experienciaId"]);
-                    if (!experienciaId) {
-                        res.status(400).json({ message: 'some info is missing' });
-                    }
-                    return [4 /*yield*/, reservasModel_1["default"].postReserva({ experienciaId: experienciaId }, param)];
-                case 1:
+                    if (!!experienciaId) return [3 /*break*/, 1];
+                    res.status(400).json({ message: 'some info is missing' });
+                    return [3 /*break*/, 3];
+                case 1: return [4 /*yield*/, reservasModel_1["default"].postReserva({ experienciaId: experienciaId }, param)];
+                case 2:
                     result = _b.sent();
                     result
                         ? res.status(201).json({ result: result.rows })
                         : res.status(500).send('No se pudo crear una nueva experiencia');
-                    return [3 /*break*/, 3];
-                case 2:
+                    _b.label = 3;
+                case 3: return [3 /*break*/, 5];
+                case 4:
                     error_1 = _b.sent();
                     res.status(400).send(error_1.message);
-                    return [3 /*break*/, 3];
-                case 3: return [2 /*return*/];
+                    return [3 /*break*/, 5];
+                case 5: return [2 /*return*/];
             }
         });
     }); }

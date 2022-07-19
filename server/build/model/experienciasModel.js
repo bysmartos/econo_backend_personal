@@ -125,6 +125,21 @@ var Experiencia = /** @class */ (function () {
             });
         });
     };
+    Experiencia.prototype.getExperienciaFilter = function (searcher) {
+        return __awaiter(this, void 0, void 0, function () {
+            var queryStr, query;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        queryStr = "SELECT * FROM experiencias WHERE titulo = $1";
+                        return [4 /*yield*/, (0, database_service_1["default"])(queryStr, [searcher.searcher])];
+                    case 1:
+                        query = _a.sent();
+                        return [2 /*return*/, query.rows];
+                }
+            });
+        });
+    };
     return Experiencia;
 }());
 exports["default"] = new Experiencia();

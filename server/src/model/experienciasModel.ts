@@ -1,5 +1,6 @@
 import connection from "../services/database.service";
 import iExperiencia from "./interfaces/iExperiencia";
+import iSearcher from "./interfaces/iSearch";
 
 import iUpdateExp from "./interfaces/iUpdateExp";
 
@@ -50,6 +51,16 @@ class Experiencia{
         console.log(client.rows)
         return client.rows;
 
+    }
+
+    async postExperienciaFilter(searcher:iSearcher){
+        const queryStr = "SELECT * FROM experiencias WHERE titulo ILIKE $1" 
+
+         const cadena = '%' + searcher.searcher + '%'
+    
+        const query = await connection(queryStr,[cadena]);
+       
+        return query.rows;
     }
 
 }

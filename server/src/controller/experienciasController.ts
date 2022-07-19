@@ -2,6 +2,7 @@
 import { Response, Request } from "express";
 import experienciasModel from "../model/experienciasModel";
 import iExperiencia from "../model/interfaces/iExperiencia";
+import iSearcher from "../model/interfaces/iSearch";
 
 
 const experienciasController={
@@ -68,7 +69,22 @@ const experienciasController={
         }catch (error: any){
             res.status(400).send(error.message);
         }
-    }}
+    },
+
+    postExperienciaFilter:  async (req:Request,res:Response)=>{
+        try{
+            // const param = req.params['seracher'];
+            const {searcher}:iSearcher = req.body;
+            const result = await experienciasModel.postExperienciaFilter({searcher});
+            result
+                    ? res.status(201).json(result)
+                    : res.status(500).send('No se pudo filtrar una  experiencia');
+        }catch (error: any){
+            res.status(400).send(error.message);
+        }
+    },
+
+}
 export default experienciasController;
 
 

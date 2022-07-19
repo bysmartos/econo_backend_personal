@@ -171,6 +171,28 @@ var experienciasController = {
                 case 3: return [2 /*return*/];
             }
         });
+    }); },
+    getExperienciaFilter: function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+        var searcher, result, error_5;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    searcher = req.body.searcher;
+                    return [4 /*yield*/, experienciasModel_1["default"].getExperienciaFilter({ searcher: searcher })];
+                case 1:
+                    result = _a.sent();
+                    result
+                        ? res.status(201).json(result)
+                        : res.status(500).send('No se pudo filtrar una  experiencia');
+                    return [3 /*break*/, 3];
+                case 2:
+                    error_5 = _a.sent();
+                    res.status(400).send(error_5.message);
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
+            }
+        });
     }); }
 };
 exports["default"] = experienciasController;
