@@ -1,0 +1,182 @@
+[
+    {
+      "id": 1,
+      "titulo": "Paseo en bicicleta por el Montseny",
+      "descripcion": "Disfruta de un hermoso paseo en bicicleta por el increíble Parque Natura del Montseny.Una escapada veraniega perfecta para parejas, familias y amigos que nos permitirá conocer nuevos y sorprendentes lugares.El recorrido que os proponemos comienza con una larga subida con algunos descansos, combinando asfalto y pistas anchas, culminando en un mirador con magníficas vistas del Vallés y el mar.Desde aquí continuaremos la bajada combinando senderos, pistas y algún tramo de carretera y terreno mixto para visitar la zona de Santa Fe, donde descubriremos la Ermita y el Bosque de las Secuoyas. Para finalizar, acudiremos al restaurante María Rosa de Palautordera, donde disfrutaremos de una excelente comida casera con butifarra blanca y negra y munxetes del Montseny.",
+      "precio": "250",
+      "duracion": "5h",
+      "img": "https://images.unsplash.com/photo-1508789454646-bef72439f197?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "accesibilidad": "Actividad disponible para todas las edades. Disponemos de bicicletas accesibles para personas con movilidad reducida en el tren inferior así como sillines con capacidad para niños menores de 5 años (peso máximo 20kg).",
+      "etiquetas": [
+        {
+          "ubicacion": "Montaña"
+        },
+        {
+          "transporte": "Bicicleta"
+        },
+        {
+          "duracion": "Excursion larga"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Descubre la costa en barco de vela",
+      "descripcion": "Disfruta de un hermoso paseo acuático en barco de vela por la increíble costa de Barcelona. Una escapada veraniega apta incluso para los días más calurosos del año. Descubre los encantadores alrededores de la ciudad de Barcelona y visita desde el mar sus más impresionantes playas y calas. Comenzaremos la excursión en el Puerto de Barcelona, desde donde partiremos hacia el norte para visitar playas como la Mar Bella, la Playa de la Mora y la Playa de los Pescadores. A bordo de la embarcación podremos disfrutar de una selección de quesos y embutidos catalanes acompañada de cava brut y zumos de frutas. Asimismo, pararemos cerca de la Playa de Montgat para realizar una actividad de buceo de superficie que nos permitirá apreciar la diversidad de la fauna marítima local y su ecosistema. Finalizaremos la excursión en el mismo puerto del que partimos. ",
+      "precio": "280",
+      "duracion": "4h",
+      "img": "https://images.unsplash.com/photo-1576526520770-99869e4b928a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "accesibilidad": "Actividad disponible para todas las edades. Pasarela para silla de ruedas disponible bajo reserva. ",
+      "etiquetas": [
+        {
+          "ubicacion": "Playa"
+        },
+        {
+          "transporte": "Barco"
+        },
+        {
+          "duracion": "Excursion larga"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Descubre la Barcelona Modernista de noche",
+      "descripcion": "Desplazarse a pie es una de las mejores formas de descubrir las maravillas modernistas que se esconden en el barcelonés distrito del Eixample, ubicado en el centro de la ciudad. En esta excursión de cuatro horas, descubriremos los principales emblemas del modernismo y visitaremos los templos y edificios más célebres del arquitecto Gaudí. El tour incluye visita guiada al interior de la Casa Batlló y la Sagrada Familia, así como parada para cenar en el restaurante típico catalán Can Masiá, donde disfrutaremos de las mejores carnes de la región acompañadas de vinos de las tierras del Baix Empordá. El restaurante también ofrece opciones vegetarianas y veganas así como menú para niños. Cava aparte.",
+      "precio": "200",
+      "duracion": "4h",
+      "img": "https://cdn.pixabay.com/photo/2020/04/16/05/37/high-first-5049249_960_720.jpg",
+      "accesibilidad": "Actividad disponible para todas las edades. Accesibilidad garantizada para sillas de ruedas.",
+      "etiquetas": [
+        {
+          "ubicacion": "Ciudad"
+        },
+        {
+          "transporte": "A pie"
+        },
+        {
+          "duración": "Excursión larga"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Del huerto a la mesa",
+      "descripcion": "Comparte con los más pequeños las maravillas de la naturaleza. En esta excursión breve de tres horas, podréis plantar vuestras propias hortalizas y verduras en el huerto de Can Gilabert, ubicado en el corazón del Montbaig. Durante una hora y media, aprenderéis a cuidar de vuestro propio huerto, plantaréis y abonaréis vuestras propias plantas, y también recogeréis parte de los ingredientes que los expertos chefs de Can Gilabert utilizarán para preparar la posterior cena, donde disfrutaréis de la experiencia de consumir productos recién recogidos de la tierra con vuestras propias manos. Actividad ideal para familiarizar a los más pequeños de la familia con el estilo de vida rural y la agricultura sostenible. Asimismo, obtendréis como obsequio una botella de aceite virgen extra cultivado y preparado en Can Gilabert, obra de la familia Gilabert, que lleva más de 80 años cultivando olivos.",
+      "precio": "145",
+      "duracion": "3h",
+      "img": "https://cdn.pixabay.com/photo/2016/08/05/17/08/apple-1572648_960_720.jpg",
+      "accesibilidad": "Actividad disponible para todas las edades. El acceso al huerto en silla de ruedas está garantizado.",
+      "etiquetas": [
+        {
+          "ubicacion": "Montaña"
+        },
+        {
+          "transporte": "A pie"
+        },
+        {
+          "duracion": "Excursión corta"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Arte en la montaña sagrada",
+      "descripcion": "Disfruta de la impresionante Montaña de Montserrat donde encontraréis el Museo con las salas modernistas de Puig i Cadafalch, lugar que acoge colecciones de gran valor en el corazón de la emblemática montaña. En el Museo encontraréis pinturas del Renacimiento y del Barroco que conviven con autores de los siglos XIX y XX, objetos del Próximo Oriente y orfebrería. Además de disfrutar de un paseo guiado por la montaña y el Museo, esta actividad incluye tentempié variado acompañado de vino espumoso, cava brut o refresco.",
+      "precio": "125",
+      "duracion": "2h",
+      "img": "https://cdn.pixabay.com/photo/2016/01/30/01/16/montserrat-1168995_960_720.jpg",
+      "accesibilidad": "Actividad disponible para todas las edades. El acceso al museo y al restaurante en silla de ruedas está garantizado",
+      "etiquetas": [
+        {
+          "ubicacion": "Montaña"
+        },
+        {
+          "transporte": "A pie"
+        },
+        {
+          "duracion": "Excursión corta"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Barcelona City Tour Hop On Hop Off",
+      "descripcion": "Explora la ciudad cómodamente a bordo de un autobús turístico de 2 pisos. Descubre Barcelona al detalle con un mismo ticket. Sube y baja de nuestros autobuses tantas veces como desees y disfruta de la ciudad a tu aire.",
+      "precio": "30",
+      "duracion": "2h",
+      "img": "https://staticsgrupojulia.blob.core.windows.net/statics/EXCURSION/2021/Espa%C3%B1a/Fotograf%C3%ADas%20-%20Pictures/HOHO%20NACIONALES/BCNBHOHO%20-%20Barcelona%20City%20Tour/CITYTOUR061WIJ9152.jpg",
+      "accesibilidad": "Actividad disponible para todas las edades. El acceso al bus en silla de ruedas está garantizado",
+      "etiquetas": [
+        {
+          "ubicacion": "Ciudad"
+        },
+        {
+          "transporte": "Bus"
+        },
+        {
+          "duracion": "Excursión corta"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Kayak y esnórquel por la Costa Brava",
+      "descripcion": "Descubre los impresionantes paisajes de la Costa Brava desde una perspectiva distinta en un emocionante tour de kayak y esnórquel desde Barcelona. Disfruta de un delicioso almuerzo tipo picnic y termina tu viaje con una bebida.",
+      "precio": "74",
+      "duracion": "6h",
+      "img": "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/36/9b/2e.jpg",
+      "accesibilidad": "Actividad disponible para todas las edades.",
+      "etiquetas": [
+        {
+          "ubicacion": "Playa"
+        },
+        {
+          "transporte": "Bus"
+        },
+        {
+          "duracion": "Excursión larga"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Paseo en globo sobre Cataluña ",
+      "descripcion": "Vuele sobre el sublime paisaje de Cataluña cerca de Barcelona en esta excursión en globo por la mañana temprano. Maravíllate ante los hermosos lugares de interés como Montserrat y las montañas de los Pirineos mientras asciendes a alturas de hasta 3,000 pies (900 metros) durante tu vuelo de 1 a 1.5 horas. Luego regresa a la tierra para el brunch con vino espumoso. Su vuelo en globo aerostático también incluye un certificado, además de que puede realizar la actualización para un vuelo más largo de 2 horas o privado.",
+      "precio": "175",
+      "duracion": "5h",
+      "img": "https://cdn.pixabay.com/photo/2015/11/06/15/25/hot-air-balloon-ride-1028896_960_720.jpg",
+      "accesibilidad": "Los niños de 5 años y menores no pueden abordar un globo aerostático. No recomendable para embarazadas. No está adaptado para personas en silla de ruedas. No es adecuado para viajeros con afecciones cardíacas u otros problemas médicos graves. Máximo 8 viajeros",
+      "etiquetas": [
+        {
+          "ubicacion": "Montaña"
+        },
+        {
+          "transporte": "Globo"
+        },
+        {
+          "duracion": "Excursión larga"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Viaje de 3 horas de viticultura y cata de vinos desde Barcelona",
+      "descripcion": "Mejora tu experiencia de los verdes viñedos que rodean Barcelona en un tour de 3 horas de vino por el Alt Penedés. Con un guía experimentado, disfrute de un recorrido completo por los viñedos y luego descienda a las bodegas atmosféricas en las que el vino envejece. Deleite su paladar con una selección de variedades cultivadas localmente mientras se deleita con productos españoles diseñados para complementar perfectamente los vinos. Tour de vino de 3 horas por la verde región vinícola del Alt Penedés desde Barcelona. Recorra los hermosos viñedos de la zona y conozca los complejos procesos de elaboración de vinos en las bodegas de la bodega.",
+      "precio": "50",
+      "duracion": "3h",
+      "img": "https://cdn.pixabay.com/photo/2014/12/02/03/12/wineglass-553467__340.jpg",
+      "accesibilidad": "La edad mínima es 12 años. Está adaptado para personas en silla de ruedas. ",
+      "etiquetas": [
+        {
+          "ubicacion": "Montaña"
+        },
+        {
+          "transporte": "Bus"
+        },
+        {
+          "duracion": "Excursión corta"
+        }
+      ]
+    }
+]
