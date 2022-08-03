@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://econotravel-grupo3.herokuapp.com/experiencias")
+      .get("http://localhost:3001/experiencias/")
       .then((res) => {
         console.log(res.data);
         setData(res.data);

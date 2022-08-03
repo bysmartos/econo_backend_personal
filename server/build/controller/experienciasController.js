@@ -172,14 +172,14 @@ var experienciasController = {
             }
         });
     }); },
-    getExperienciaFilter: function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    postExperienciaFilter: function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
         var searcher, result, error_5;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 2, , 3]);
                     searcher = req.body.searcher;
-                    return [4 /*yield*/, experienciasModel_1["default"].getExperienciaFilter({ searcher: searcher })];
+                    return [4 /*yield*/, experienciasModel_1["default"].postExperienciaFilter({ searcher: searcher })];
                 case 1:
                     result = _a.sent();
                     result

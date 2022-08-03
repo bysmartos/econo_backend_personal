@@ -36,32 +36,32 @@ function Catalogo({ data }) {
                    
             <Grid container spacing={10}>
                {data.map((exp, index) => (
-                 <Grid key={index} item xs={12} sm={6} md={4}>
-                  <Card  sx={{ maxWidth: 330}} style={{height:"35rem"}} >
-                    <CardMedia
-                              component="img"
-                               height="370"
-                               alt="bici montaña"
-                              image={exp.img} />
-                     <CardContent>
-                     <Link to={`/cartas/${exp.titulo}`} style={{textDecoration: "none"}}>   <Typography variant="body1" style={{fontWeight:"bold", color:"#4B7F55" }}>  {exp.titulo} </Typography> </Link> 
-               <Stack direction="row" spacing={1}>
-                   <Item>Chip One</Item>
-                    <Item>Chip One</Item>
-                    <Item>Chip One</Item>
-                  </Stack>
-                <CardActions style={{justifyContent:"space-between"}} >
-                  <Typography style={{fontSize:"0.8rem", color:"#4B7F55", fontWeight:"bold"}} >{exp.etiquetas[0].ubicacion}
-                  <Typography style={{fontSize:"0.7rem", color:"#2F2F2F"}} >
-                  {exp.precio}€ Por persona
-                    </Typography>
-                  </Typography>
-               <Link to={`/reserva/${exp.id}`} style={{textDecoration: "none"}}> <Button style={{fontSize:"0.6rem", color:"#2F2F2F", fontWeight:"bold"}}>Reserva ahora</Button></Link>
-                   </CardActions>
-                  </CardContent>
+                 <Grid key={index} item xs={12} sm={6} md={4} style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                 <Card   sx={{ maxWidth: 330}} style={{height:"35rem"}}>
+                      <CardMedia
+                             component="img"
+                             height="370"
+                             alt="bici montaña"
+                             image={exp.imagen} />
+                  <CardContent>
+                 <Link to={`/destacadas/${exp.titulo}`} style={{textDecoration: "none"}}> <Typography variant="body1" style={{fontWeight:"bold", color:"#4B7F55", height:'48px' }}>{exp.titulo}</Typography> </Link>
+
+              <Stack direction="row" spacing={1}>
+                  <Item>{exp.duracionhoras}</Item>
+                   <Item>{exp.transporte}</Item>
+                   <Item>{exp.ubicacion}</Item>
+                 </Stack>
+               <CardActions style={{justifyContent:"space-between"}} >
+              
+                 <Typography style={{fontSize:"0.8rem", color:"#4B7F55", fontWeight:"bold"}} >
+                 {exp.precio}€ Por persona
+                   </Typography>
                  
-                       </Card>
-                 </Grid>
+            <Link to={`/reserva/${exp.experiencia_id}`} style={{textDecoration: "none"}}> <Button style={{fontSize:"0.6rem", color:"#2F2F2F", fontWeight:"bold"}}>Reserva ahora</Button></Link>   
+                  </CardActions>
+                 </CardContent>
+                      </Card>
+               </Grid>
                  ))}
            </Grid>
              </StyledContainer>

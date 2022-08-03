@@ -60,7 +60,7 @@ const Reserva = () => {
     
     useEffect(() => {
       setLoading(true)
-      axios.get('https://econotravel-grupo3.herokuapp.com/experiencias')
+      axios.get('http://localhost:3001/experiencias/')
         .then(res => {
           console.log(res.data)
           setData(res.data);
@@ -69,7 +69,7 @@ const Reserva = () => {
     }, [])
       
     console.log(data)
-    const test = data.filter(exper => exper.id == id);
+    const test = data.filter(exper => exper.experiencia_id == id);
     console.log(test)
        
        if (loading) return <section>Cargando...</section>

@@ -11,5 +11,5 @@ router.get('/experiencias/:id', experienciasController_1["default"].getOneExperi
 router.post('/experiencias/insert', experienciasController_1["default"].postExperiencia);
 router.put('/experiencias/:id', experienciasController_1["default"].updateExperiencia);
 router["delete"]('/experiencias/:id', experienciasController_1["default"].deleteExperiencia);
-router.get('/experiencias/filter', experienciasController_1["default"].getExperienciaFilter);
+router.post('/experiencia/filter', experienciasController_1["default"].postExperienciaFilter);
 exports["default"] = router;

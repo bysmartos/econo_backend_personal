@@ -39,7 +39,7 @@ const ContenidoDetExp = ({ i }) => {
 
     return ( 
     <ResponsiveBox sx={{}}>
-        <StyledImg src={data[i].img} alt=""  />
+        <StyledImg src={data[i].imagen} alt=""  />
         <ReadMore >
             {data[i].descripcion} 
         </ReadMore>
